@@ -1,55 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../css/style.css">
 
-  <title>Frontend Mentor | Skilled e-learning landing page</title>
+    <title>Frontend Mentor | Skilled e-learning landing page</title>
 
-</head>
-<body>
+  </head>
 
-  Get Started
+  <body>
 
-  Maximize skill, minimize budget
+    <main class="main">
 
-  Our modern courses across a range of in-demand skills will give you the 
-  knowledge you need to live the life you want.
+      <!--Navigation with logo on the top-->
 
-  Get Started
+      <nav class="nav-bar nav-bar-top">
+        <img class="nav-bar-logo nav-bar-top__logo" src="../starter-code/assets/logo-dark.svg" alt="logo dark">
+        <div class="button nav-bar__button">
+          <a class="nav-bar-top__button nav-bar-top__button--hover" href="#">Get Started</a> 
+        </div>
+      </nav>
 
-  Check out our most popular courses!
+      <!--Hero section with image and button-->
 
-  Animation
-  Learn the latest animation techniques to create stunning motion 
-  design and captivate your audience.
-  Get Started
+      <section class="hero">
 
-  Design
-  Create beautiful, usable interfaces to help shape the future of 
-  how the web looks.
-  Get Started
+        <header class="hero__header">
+          <h1 class="hero__title">Maximize skill, minimize budget</h1>
+          <p>Our modern courses across a range of in-demand skills will give you the 
+          knowledge you need to live the life you want.</p>
+          <div class="button hero__button">
+            <a class="hero__button--normal hero__button--hover" href="#">Get Started</a> 
+          </div>
+        </header>
 
-  Photography
-  Explore critical fundamentals like lighting, composition, and focus 
-  to capture exceptional photos.
-  Get Started
+          <img class="hero__img--mobile" src="../starter-code/assets/image-hero-mobile.png" alt="girl with laptop">
+          <img class="hero__img--teblet" src="../starter-code/assets/image-hero-tablet.png" alt="girl with laptop">
+          <img class="hero__img--desktop" src="../starter-code/assets/image-hero-desktop.png" alt="girl with laptop">
+        
 
-  Crypto
-  All you need to know to get started investing in crypto. Go from beginner 
-  to advanced with this 54 hour course.
-  Get Started
+      </section>
 
-  Business
-  A step-by-step playbook to help you start, scale, and sustain your business 
-  without outside investment.
-  Get Started
+      <!--section with main content about courses made by cards components and positioned icons-->
 
-  Get Started
+      <section class="content-container courses-options">
 
+        <header class="courses-options__header">
+          <h2 class="courses-options__title--main">Check out our most popular courses!</h2>
+        </header>
 
-</body>
+        <article class="courses_options__content"></article>
+          <h3 class="courses-options__title--secondary">Animation</h3>
+
+          <p>Learn the latest animation techniques to create stunning motion 
+          design and captivate your audience.</p>
+
+          <div class="button hero__button">
+            <a class="hero__button--normal hero__button--hover" href="#">Get Started</a> 
+          </div>
+        </article>
+
+        <article class="courses_options__content">
+          <h3 class="courses-options__title--secondary">Design</h3>
+          <p>Create beautiful, usable interfaces to help shape the future of 
+          how the web looks.</p>
+
+          <div class="button hero__button">
+            <a class="hero__button--normal hero__button--hover" href="#">Get Started</a> 
+          </div>
+        </article>
+
+        <article class="courses_options__content">
+          <h3 class="courses-options__title--secondary">Photography</h3>
+          <p>Explore critical fundamentals like lighting, composition, and focus 
+          to capture exceptional photos.</p>
+
+          <div class="button hero__button">
+            <a class="hero__button--normal hero__button--hover" href="#">Get Started</a> 
+          </div>
+        </article>
+
+        <article class="courses_options__content">
+          <h3 class="courses-options__title--secondary">Crypto</h3>
+          <p>All you need to know to get started investing in crypto. Go from beginner 
+          to advanced with this 54 hour course.</p>
+          
+          <div class="button hero__button">
+            <a class="hero__button--normal hero__button--hover" href="#">Get Started</a> 
+          </div>
+        </article>
+
+        <article class="courses_options__content">
+          <h3 class="courses-options__title--secondary">Business</h3>
+          <p>A step-by-step playbook to help you start, scale, and sustain your business 
+          without outside investment.</p>
+
+          <div class="button hero__button">
+            <a class="hero__button--normal hero__button--hover" href="#">Get Started</a> 
+          </div>
+        </article>
+
+      </section>
+
+      <div class="button hero__button">
+        <a class="hero__button--normal hero__button--hover" href="#">Get Started</a> 
+      </div>
+
+      <!--Footer with logo and button-->
+
+      <footer class="footer nav-bar__footer">
+        <nav class="nav-bar nav-bar-top">
+          <img class="nav-bar-logo nav-bar-top__logo" src="../starter-code/assets/logo-light.svg" alt="logo light">
+          <div class="button nav-bar__button">
+            <a class="nav-bar-top__button nav-bar-top__button--hover" href="#">Get Started</a> 
+          </div>
+        </nav>
+      </footer>
+
+    </main>
+
+  </body>
+
 </html>
