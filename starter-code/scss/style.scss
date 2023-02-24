@@ -1,1 +1,249 @@
+
+//font
 $text-font: 'Plus Jakarta Sans', sans-serif;
+
+//color
+$c-primary: #F74780;
+$c-fresh-active: #ffa7c3;
+$c-secondary: #13183F;
+$c-light-active: #666CA3;
+$c-text: #83869A;
+$c-gradient1: linear-gradient(0deg, rgba(240,42,166,1) 29%, rgba(255,111,72,1) 75%);
+
+$c-gradient2: linear-gradient(180deg, rgba(72,81,255,1) 29%, rgba(240,42,166,1) 76%);
+
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *, ::before, ::after {
+    box-sizing: inherit;
+  }
+
+  
+  /*
+  Breakpoints
+  mobile 375px-767px
+  tablet 768px-1439px
+  desktop 1440px and more
+  */
+
+  body {
+    font-family: $text-font;
+    line-height: 1.5;
+    color: $c-text;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 20%, rgba(240,241,255,1) 100%);
+  }
+
+  .wrapper-content {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    color: $c-secondary;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 0 0 3rem 0;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  h3 {
+    color: $c-secondary;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+
+  /*components*/
+  .button {
+    text-decoration: none;
+    padding: .7em 1.5em;
+    border-radius: 28px;
+  }
+  // navigation bar with logo on the top and bottom of the page
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  
+    
+    &__logo {
+      width: 76px;
+      height: 28px;
+    }
+
+    &-top__button {
+      background: $c-secondary;
+      color: #ffff;
+
+    }
+
+    &-top__button--hover:hover,
+    &-top__button--hover:hover {
+      background: $c-light-active;
+    }
+  }
+
+
+  /* main content section hero + cards courses options*/
+
+  .main {
+
+    @media screen and (max-width: 767px) {
+      padding: 1rem;
+    }
+    
+  }
+
+.hero {
+
+  &__header {
+    margin: 2.5rem 0 3rem 0;
+  }
+
+  &__button--normal {
+    color: #ffff;
+    background: $c-gradient1;
+  }
+
+  &__button--hover:hover,
+  &__button--hover:active {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+    &__header {
+      max-width: 398px;
+    }
+  }
+
+  &__img--mobile {
+    width: 100%;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__img--tablet {
+    max-width: 100%;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      
+    }
+  }
+
+  &__img--desktop {
+    max-width: 100%;
+    text-align: center;
+    display: none;
+
+    /*@media screen and (min-width: 1440px) {
+      display: block;
+    }*/
+  }
+}
+
+.content-container {
+  max-width: 1110px;
+  margin: 0 auto;
+}  
+
+.courses-options {
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+ 
+
+
+  &__content {
+    background: #ffff;
+    padding: 3.5rem 2rem 2rem 2rem;
+    margin-bottom: 2.5rem;
+    border-radius: 10px;
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+      flex: 0 0 calc(50% - 1rem);
+    }
+
+    @media screen and (min-width: 1440px) {
+      flex: 0 0 calc(33.3% - 1rem);
+    }
+    
+  }
+
+  &__icon {
+    position: absolute;
+    top: -28px;
+  }
+
+
+   
+  &__header {
+    background: $c-gradient1;
+    color: #ffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+
+  &__button--normal {
+    color: $c-primary;
+    text-decoration: none;
+  }
+
+}
+
+/*footer*/
+
+.nav-bar__footer {
+  background-color: $c-secondary;
+  width: 100%;
+  
+
+  &--bottom {
+    align-items: center;
+    height: 120px;
+    padding: 5%;
+    margin: 0;
+  }
+
+  &--button {
+    background: $c-gradient2;
+    color: #ffff;
+  }
+
+  &--button-hover:hover,
+  &--button-hover:active {
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    }
+}
+
+    
