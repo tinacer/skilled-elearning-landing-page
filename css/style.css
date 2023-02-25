@@ -14,6 +14,8 @@ desktop 1440px and more
 */
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
   line-height: 1.5;
   color: #83869A;
   padding: 0;
@@ -23,6 +25,7 @@ body {
 @media screen and (min-width: 1440px) {
   body {
     font-size: 1.1rem;
+    font-weight: 700;
   }
 }
 
@@ -39,20 +42,35 @@ body {
 h1 {
   color: #13183F;
   font-size: 2.5rem;
-  font-weight: 400;
+  font-weight: 800;
   margin: 0 0 3rem 0;
+}
+@media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 3.5rem;
+  }
 }
 
 h2 {
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 800;
+}
+@media screen and (min-width: 1440px) {
+  h2 {
+    font-size: 2.5rem;
+  }
 }
 
 h3 {
   color: #13183F;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 800;
   margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 1440px) {
+  h3 {
+    font-size: 2rem;
+  }
 }
 
 p {
@@ -99,6 +117,9 @@ p {
 .hero__header {
   margin: 2.5rem 0 3rem 0;
 }
+.hero__header p {
+  margin-bottom: 3rem;
+}
 .hero__button--normal {
   color: white;
   background: linear-gradient(0deg, rgb(240, 42, 166) 29%, rgb(255, 111, 72) 75%);
@@ -130,13 +151,18 @@ p {
 }
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .hero__img--tablet {
-    max-width: 100%;
+    width: 150%;
+    position: relative;
+    top: -100px;
+    right: -100px;
     display: block;
   }
 }
 .hero__img--desktop {
-  max-width: 100%;
+  width: 200%;
   text-align: center;
+  position: relative;
+  top: -200px;
   display: none;
 }
 @media screen and (min-width: 1440px) {
@@ -147,7 +173,7 @@ p {
 
 /*container with cards and icons*/
 .content-container {
-  margin: 10% auto 15% auto;
+  margin: 0 auto 15% auto;
 }
 
 @media screen and (min-width: 768px) {

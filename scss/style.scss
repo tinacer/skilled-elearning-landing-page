@@ -32,6 +32,8 @@ html {
 
   body {
     font-family: $text-font;
+    font-size: 1rem;
+    font-weight: 500;
     line-height: 1.5;
     color: $c-text;
     padding: 0;
@@ -40,6 +42,7 @@ html {
 
     @media  screen and (min-width: 1440px) {
       font-size: 1.1rem;
+      font-weight: 700;
     }
   }
 
@@ -55,27 +58,38 @@ html {
   h1 {
     color: $c-secondary;
     font-size: 2.5rem;
-    font-weight: 400;
+    font-weight: 800;
     margin: 0 0 3rem 0;
+
+    @media screen and (min-width: 1440px) {
+      font-size: 3.5rem;
+    }
   }
 
   h2 {
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 800;
+
+    @media screen and (min-width: 1440px) {
+      font-size: 2.5rem;
+    }
   }
 
   h3 {
     color: $c-secondary;
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 800;
     margin-bottom: 1.5rem; 
+
+    @media screen and (min-width: 1440px) {
+      font-size: 2rem;
+    }
   }
 
   p {
     margin-top: 0;
     margin-bottom: 1.5rem;
   }
-
 
   // components
   .button {
@@ -123,6 +137,10 @@ html {
 .hero {
   &__header {
     margin: 2.5rem 0 3rem 0;
+
+    & p {
+      margin-bottom: 3rem;
+    }
   }
 
   &__button--normal {
@@ -158,14 +176,19 @@ html {
     display: none;
 
     @media screen and (min-width: 768px) and (max-width:1439px) {
-      max-width: 100%;
+      width: 150%;
+      position: relative;
+      top: - 100px;
+      right: - 100px;
       display: block;
     }
   }
 
   &__img--desktop {
-    max-width: 100%;
+    width: 200%;
     text-align: center;
+    position: relative;
+    top: - 200px;
     display: none;
 
     @media screen and (min-width: 1440px) {
@@ -177,7 +200,7 @@ html {
 /*container with cards and icons*/
 
 .content-container {
-  margin: 10% auto 15% auto;
+  margin: 0 auto 15% auto;
 }  
 
 .courses-options {
