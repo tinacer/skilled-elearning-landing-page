@@ -151,18 +151,13 @@ p {
 }
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .hero__img--tablet {
-    width: 150%;
-    position: relative;
-    top: -100px;
-    right: -100px;
     display: block;
+    width: 100%;
   }
 }
 .hero__img--desktop {
-  width: 200%;
+  width: 100%;
   text-align: center;
-  position: relative;
-  top: -200px;
   display: none;
 }
 @media screen and (min-width: 1440px) {
@@ -173,7 +168,7 @@ p {
 
 /*container with cards and icons*/
 .content-container {
-  margin: 0 auto 15% auto;
+  margin: 10% auto 15% auto;
 }
 
 @media screen and (min-width: 768px) {
