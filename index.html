@@ -6,10 +6,8 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="../css/style.css">
-
+    <link rel="stylesheet" href="css/style.css">
     <title>Frontend Mentor | Skilled e-learning landing page</title>
-
   </head>
 
   <body>
@@ -19,13 +17,13 @@
         <!--Navigation with logo on the top-->
 
         <nav class="nav-bar nav-bar-top">
-          <img class="nav-bar__logo nav-bar__top--logo" src="../starter-code/assets/logo-dark.svg" alt="logo dark">
+          <img class="nav-bar__logo nav-bar__top--logo" src="assets/logo-dark.svg" alt="logo dark">
           
-            <a class="button nav-bar-top__button nav-bar-top__button--hover" href="#">Get Started</a> 
-      
+          <a class="button nav-bar-top__button nav-bar-top__button--hover" href="#">Get Started</a>
         </nav>
 
         <main class="main">
+
           <!--Hero section with image and button-->
 
           <section class="hero">
@@ -34,97 +32,98 @@
               <h1 class="hero__title">Maximize skill, minimize budget</h1>
               <p>Our modern courses across a range of in-demand skills will give you the 
               knowledge you need to live the life you want.</p>
-              <div class="button hero__button">
-                <a class="button hero__button--normal hero__button--hover" href="#">Get Started</a> 
-              </div>
+              <a class="button hero__button--normal hero__button--hover" href="#">Get Started</a> 
             </header>
 
-              <img class="hero__img--mobile" src="../starter-code/assets/image-hero-mobile.png" alt="girl with laptop">
-              <img class="hero__img--tablet" src="../starter-code/assets/image-hero-tablet.png" alt="girl with laptop">
-              <img class="hero__img--desktop" src="../starter-code/assets/image-hero-desktop.png" alt="girl with laptop">
-            
+              <img class="hero__img--mobile" src="assets/image-hero-mobile.png" alt="girl with laptop">
+
+              <div class="hero-wrapper__img">
+               <img class="hero__img--tablet" src="assets/image-hero-tablet.png" alt="girl with laptop">
+              </div>
+
+              <div class="hero-wrapper__img">
+               <img class="hero__img--desktop" src="assets/image-hero-desktop.png" alt="girl with laptop">
+              </div>
 
           </section>
 
           <!--section with main content about courses made by cards components and positioned icons-->
 
           <section class="content-container">
+
             <div class="wrapper courses-options">
+
               <header class="courses-options__content courses-options__header">
                 <h2 class="courses-options__title--main">Check out our most popular courses!</h2>
               </header>
 
               <article class="courses-options__content">
-                <img class="courses-options__icon" src="../starter-code/assets/icon-animation.svg" alt="animation icon">
+                <img class="courses-options__icon" src="assets/icon-animation.svg" alt="animation icon">
                 <h3 class="courses-options__title--secondary">Animation</h3>
 
                 <p>Learn the latest animation techniques to create stunning motion 
                 design and captivate your audience.</p>
 
-                <div class="hero__button">
-                  <a class="courses-options__button--normal hero__button--hover" href="#">Get Started</a> 
-                </div>
+                <a class="courses-options__button--normal" href="#">Get Started</a>
               </article>
 
               <article class="courses-options__content">
-                <img class="courses-options__icon" src="../starter-code/assets/icon-design.svg" alt="design icon">
+                <img class="courses-options__icon" src="assets/icon-design.svg" alt="design icon">
                 <h3 class="courses-options__title--secondary">Design</h3>
+
                 <p>Create beautiful, usable interfaces to help shape the future of 
                 how the web looks.</p>
 
-                <div class="hero__button">
-                  <a class="courses-options__button--normal hero__button--hover" href="#">Get Started</a> 
-                </div>
+                <a class="courses-options__button--normal" href="#">Get Started</a> 
               </article>
 
               <article class="courses-options__content">
-                <img class="courses-options__icon" src="../starter-code/assets/icon-photography.svg" alt="photography icon">
+                <img class="courses-options__icon" src="assets/icon-photography.svg" alt="photography icon">
                 <h3 class="courses-options__title--secondary">Photography</h3>
+
                 <p>Explore critical fundamentals like lighting, composition, and focus 
                 to capture exceptional photos.</p>
 
-                <div class="hero__button">
-                  <a class="courses-options__button--normal hero__button--hover" href="#">Get Started</a> 
-                </div>
+                <a class="courses-options__button--normal" href="#">Get Started</a> 
               </article>
 
               <article class="courses-options__content">
-                <img class="courses-options__icon" src="../starter-code/assets/icon-crypto.svg" alt="crypto icon">
+                <img class="courses-options__icon" src="assets/icon-crypto.svg" alt="crypto icon">
                 <h3 class="courses-options__title--secondary">Crypto</h3>
+
                 <p>All you need to know to get started investing in crypto. Go from beginner 
                 to advanced with this 54 hour course.</p>
                 
-                <div class="hero__button">
-                  <a class="courses-options__button--normal hero__button--hover" href="#">Get Started</a> 
-                </div>
+                <a class="courses-options__button--normal" href="#">Get Started</a> 
               </article>
 
               <article class="courses-options__content">
-                <img class="courses-options__icon" src="../starter-code/assets/icon-business.svg" alt="business icon">
+                <img class="courses-options__icon" src="assets/icon-business.svg" alt="business icon">
                 <h3 class="courses-options__title--secondary">Business</h3>
+
                 <p>A step-by-step playbook to help you start, scale, and sustain your business 
                 without outside investment.</p>
 
-                <div class="hero__button">
-                  <a class="courses-options__button--normal hero__button--hover" href="#">Get Started</a> 
-                </div>
+                  <a class="courses-options__button--normal" href="#">Get Started</a> 
               </article>
+
             </div>
+
           </section>
+
         </main>
+
     </div>
+
         <!--Footer with logo and button-->
 
         <footer class="footer nav-bar__footer">
-          <nav class="nav-bar nav-bar__footer--bottom">
-            <img class="nav-bar__logo nav-bar__footer-logo--light" src="../starter-code/assets/logo-light.svg" alt="logo light">
+          <nav class="nav-bar__footer--bottom">
+            <img class="nav-bar__logo nav-bar__footer-logo--light" src="assets/logo-light.svg" alt="logo light">
             
             <a class="button nav-bar__footer--button nav-bar__footer--button-hover" href="#">Get Started</a> 
-          
           </nav>
         </footer>
-
-    
 
   </body>
 
